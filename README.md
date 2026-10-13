@@ -20,6 +20,7 @@
 - 楼梯：`/?scene=office-stairs`
 - 二楼：`/?scene=office-upstairs`
 - 卢宅：`/luzhai`
+- 所有目的地及区域切换均使用 `?scene=...`。首页和旧的 `/luzhai` 入口加载后也会补全对应参数，复制地址即可分享当前所选场景。
 - 妙济桥：`/?scene=miaoji`
 
 ## 构建与发布
