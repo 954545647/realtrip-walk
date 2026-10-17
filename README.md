@@ -2,9 +2,10 @@
 
 线上站点：https://realtrip-walk.onrender.com/
 
-当前提供四个场景：
+当前提供五个公开场景：
+- Hackathon 主会场（默认）：`/?scene=hackathon`
 - 荣誉连廊：`/honor-corridor/?scene=honor-corridor`
-- 2号楼（默认）：`/?scene=building2`；旧 `?scene=insta360` 兼容。
+- 2号楼：`/?scene=building2`；旧 `?scene=insta360` 兼容。
 - 露台：`/?scene=terrace`
 - 食堂：`/?scene=cafeteria`，保留人物；旧 `?scene=cafeteria-original` 自动兼容到同一场景。
 
@@ -63,3 +64,10 @@
 `/?scene=alpine-lake` 仅通过链接访问，不加入四个公开场景菜单。用户提供 SPZ 场景和 Open3D PLY 碰撞网格；保留全部 1,189,993 个高斯点，转换为 SOG。采用原始坐标（+Y 向上）与 0.1 模型单位的三角面地形采样，角色贴地行走，限制水面、陡坡、网格缺口及边缘。支持现有键鼠、摇杆、跳跃和复位。
 
 原文件哈希、碰撞采样及转换说明见 public/alpine-lake/provenance.json。没有现场测量比例；源模型水面与侧面仍有重建瑕疵。横竖屏为浏览器尺寸验证，未做物理手机性能验收。现有四个场景的配置、模型和菜单不变。构建与导航回归测试通过。
+
+
+## Hackathon 首屏场景（2026-10-17）
+
+第 4 份 capture 负责清晰会场，第 2 份真实活动画面经透视校正贴回三块物理屏幕，避免侧屏高斯重影；没有生成文字或虚构画面。保留 918,310 个主体点的原始属性与人物。前排、阶梯通道可连续行走，座席、立柱和边缘阻挡。根地址默认主会场，已有显式链接继续可用；未公开山湖入口保持不变。
+
+发布模型 `hackathon-venue-20261017.sog`，构建校验 SHA256。包内 `HACKATHON-WORKFLOW.md` 记录选材、处理、尺度和验证限制。全套回归、横竖屏布局、摇杆下阶梯/返回/复位和场景切换通过。
