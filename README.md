@@ -2,6 +2,14 @@
 
 线上站点：https://realtrip-walk.onrender.com/
 
+## 演讲演示
+
+独立入口：https://realtrip-walk.onrender.com/presentation/ 。大模型在左、用户在右，点击聊天区域或按 ↓ 逐条展示，↑ 回退，R 重来，F 全屏。开场不预告后续代际；底部无操作栏，顶部无 LIVE 文字。
+
+第一天为携程 Hackathon 比赛和项目展示，随后接七天北疆行程。演示依次呈现文字、图文、可点击的 B 站视频，最后显示「这一次，你来走一走。」与食堂体验二维码。右上角设置可替换视频链接。
+
+页面、样式、脚本、三张景点图和二维码以构建产物打入 `realtrip-render.zip` 的 `public/presentation/`；公共目录清理脚本保留此路径。源码在开发仓库 `src/presentation/`，更新时先运行 `npm run build:presentation`。网页脚本不包含内部仓库来源元数据。
+
 当前提供五个公开场景：
 - Hackathon 主会场（默认）：`/?scene=hackathon`
 - 荣誉连廊：`/honor-corridor/?scene=honor-corridor`
